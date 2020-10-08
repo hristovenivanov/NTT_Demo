@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite verbose="1" name="SQAT Demo Tests - Web Sample Test" skipfailedinvocationcounts="false" junit="false" parallel="methods" annotations="JDK">
+
+	<parameter name="suiteOwner" value="sqatdemo"/>
+	<parameter name="jenkinsJobCreation" value="true"/>
+	<parameter name="jenkinsJobName" value="Web-Demo-Test-Sample"/>
+	<parameter name="jenkinsJobType" value="web"/>
+	<parameter name="jenkinsNodeLabel" value="web"/>
+	<parameter name="jenkinsEnvironments" value="DEMO"/>
+	<parameter name="jenkinsEmail" value="ivan.dobrinov@scalefocus.com"/>
+	<parameter name="jenkinsFailedEmail" value="ivan.dobrinov@scalefocus.com"/>
+
+	<test name="GSM arena web tests">
+		<classes>
+			<class name="com.scalefocus.WebSampleTest" />
+		</classes>
+	</test>
+
+</suite>

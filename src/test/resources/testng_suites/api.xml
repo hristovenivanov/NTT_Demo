@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="SQAT Demo Tests - API Sample" skipfailedinvocationcounts="false" junit="false" parallel="tests" annotations="JDK">
+
+	<parameter name="suiteOwner" value="sqatdemo"/>
+	<parameter name="jenkinsJobCreation" value="true"/>
+	<parameter name="jenkinsJobName" value="API-Demo-Test"/>
+	<parameter name="jenkinsJobType" value="api"/>
+	<parameter name="jenkinsEnvironments" value="DEMO"/>
+	<parameter name="jenkinsEmail" value="ivan.dobrinov@scalefocus.com"/>
+	<parameter name="jenkinsFailedEmail" value="ivan.dobrinov@scalefocus.com"/>
+
+	<test name="User API tests">
+		<classes>
+			<class name="com.scalefocus.APISampleTest" />
+		</classes>
+	</test>
+
+</suite>
